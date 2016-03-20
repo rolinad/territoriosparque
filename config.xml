@@ -3,16 +3,16 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.wid.territorios"
+        id        = "com.darr.territorios"
         version   = "1.0.0">
 
     <name>Territorios</name>
 
     <description>
-        Territorios es una aplicacion que permite acceder facilmente a los territorios asignados a nuestra congregación Norte. Permite ver los territorios individuales, con sus respectivas ubicaciones y etiquetas de cuadras, como tambien el mapa entero de la congregación.
+        Territorios es una aplicacion que permite acceder facilmente a los territorios asignados a nuestra congregación Parque. Permite ver los territorios individuales, con sus respectivas ubicaciones y etiquetas de cuadras, como tambien el mapa entero de la congregación.
     </description>
 
-    <author href="http://wid.cl" email="dramirez@wid.cl">
+    <author href="http://darr.cl" email="da_rrios@hotmail.com">
         Danilo Ramírez
     </author>
 
