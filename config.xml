@@ -6,7 +6,7 @@
         id        = "com.darr.territorios"
         version   = "1.0.0">
 
-    <name>Territorios</name>
+    <name>Territorios Parque</name>
 
     <description>
         Territorios es una aplicacion que permite acceder facilmente a los territorios asignados a nuestra congregación Parque. Permite ver los territorios individuales, con sus respectivas ubicaciones y etiquetas de cuadras, como tambien el mapa entero de la congregación.
