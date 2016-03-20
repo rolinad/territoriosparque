@@ -12,7 +12,7 @@ html, body {
 .ayuda {
 	display: none;
 	width: 100%;
-	height: 100%;
+	min-height: 100%;
 	background: rgba(0,0,0,0.7);
 	position: fixed;
 	text-align: center;
