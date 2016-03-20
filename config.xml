@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.wid.territorios"
+        version   = "1.0.0">
+
+    <name>Territorios</name>
+
+    <description>
+        Territorios es una aplicacion que permite acceder facilmente a los territorios asignados a nuestra congregación Norte. Permite ver los territorios individuales, con sus respectivas ubicaciones y etiquetas de cuadras, como tambien el mapa entero de la congregación.
+    </description>
+
+    <author href="http://wid.cl" email="dramirez@wid.cl">
+        Danilo Ramírez
+    </author>
+
+    <!-- Permisos    -->
+    <preference name="permissions"                value="none"/>
+
+    <!-- Icon. -->
+    <icon src="icono.png" />
+    <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:qualifier="ldpi" />
+    <icon src="res/icon/android/icon-48-mdpi.png"   gap:platform="android"    gap:qualifier="mdpi" />
+    <icon src="res/icon/android/icon-72-hdpi.png"   gap:platform="android"    gap:qualifier="hdpi" />
+    <icon src="res/icon/android/icon-96-xhdpi.png"  gap:platform="android"    gap:qualifier="xhdpi" />
+
+
+    <!-- splash screen -->
+    <gap:splash src="splash.png" />
+    
+    <gap:splash src="res/screen/android/screen-ldpi-portrait.png"       gap:platform="android" gap:qualifier="port-ldpi" />
+    <gap:splash src="res/screen/android/screen-mdpi-portrait.png"       gap:platform="android" gap:qualifier="port-mdpi" />
+    <gap:splash src="res/screen/android/screen-hdpi-portrait.png"       gap:platform="android" gap:qualifier="port-hdpi" />
+    <gap:splash src="res/screen/android/screen-xhdpi-portrait.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
+
+
+</widget>

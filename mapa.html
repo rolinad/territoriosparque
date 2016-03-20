@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Territorios Congregacion Parque</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+
+	<link rel="stylesheet" href="css/photoswipe.css"> 
+	<link rel="stylesheet" href="css/default-skin/default-skin.css"> 
+
+</head>
+<body>
+    <div class="ayuda">
+        <img src="img/iniciomobile.png" alt="" class="activa primera img-responsive">
+        <img src="img/iniciomobile1.png" alt="" class="hide img-responsive">
+        <img src="img/ayuda1.png" alt="" class="hide img-responsive">
+        <img src="img/ayuda2.png" alt="" class="hide img-responsive">
+        <img src="img/ayuda3.png" alt="" class="hide img-responsive">
+        <img src="img/ayuda4.png" alt="" class="ultima hide img-responsive">
+        <button type="button" class="btn btn-lg btn-success btn-ayuda" href="#">
+                        <i class="glyphicon glyphicon-ok"></i>
+                        Ok
+        </button>
+    </div>
+	<div class="navbar navbar-fixed-top">
+		<div class="head menu-toggle">
+			<button type="button" class="nostyle" href="#">
+	                    <i class="glyphicon glyphicon-menu-hamburger"></i>
+	        </button>
+			<img src="icono.png" alt=""> 
+			<p>Territorios</p>
+		</div>
+	</div>
+    <!-- Navigation -->
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li>
+                <a id="territorios" href="index.html"><span class="glyphicon glyphicon-th"></span>   Territorios</a>
+            </li>
+            <li>
+                <a class="active" id="mapgeneral" href="#"><span class="glyphicon glyphicon-picture"></span>   Mapa general</a>
+            </li>
+            <li>
+                <a id="ayuda" class="menu-toggle" href="#"><span class="glyphicon glyphicon-question-sign"></span>   Ayuda</a>
+            </li>
+        </ul>
+    </nav>
+	<div class="main-box">
+			
+			<div class="cajaopaca menu-toggle"></div>
+			
+			<div class="container-fluid">
+				<img src="img/Territorio Parque Completo.jpg" alt="Mapa general de la congregación Parque" class="panzoom img-responsive mapa" width="6928" height="3352">
+			</div>
+	</div>
+	
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.mobile.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery.panzoom.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script src="js/ayuda.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+    // Opens the sidebar menu
+    $(".menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+        $(".nostyle").toggleClass("active");
+        $(".cajaopaca").fadeToggle();
+    });
+
+    $(".mapa, #sidebar-wrapper").on("swipeleft",function(){
+    	    $("#sidebar-wrapper").removeClass("active");
+        	$(".nostyle").removeClass("active");
+        	$(".cajaopaca").fadeOut();  
+    });
+
+    $(".panzoom").panzoom();
+
+	// Pass options
+	$("a.panzoom").panzoom({
+	  minScale: 100,
+	  $zoomRange: $("input[type='range']")
+	});
+
+    
+
+
+
+</script>
+
+</html>
